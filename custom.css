@@ -34,8 +34,9 @@
   font-family:'Courier New', Courier, monospace;
   color: #fff;
 }
+
 .titulo-card-animado:after{
-content: '|';
+content: '_';
 margin-left: 5px;
 opacity: 1;
 animation: pisca .7s infinite;
@@ -63,11 +64,50 @@ animation: pisca .7s infinite;
   align-items: center;
 }
 
-.card-header{
+.card.text-white.bg-primary.mb-3 .card-header{
   min-height: 150px ;
   width: 100%;
 }
 
 #logo-nav{
   max-width: 20%;
+}
+
+#area-de-botoes-principal{
+  margin: 100px 0 200px 0;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative !important;
+}
+
+/* células de skills */
+
+.titulo-skills-animado:after{
+  content: '_';
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca .7s infinite;
+}
+
+#area-de-skills{
+  margin-top: 50px;
+  width: 80%;
+}
+
+#celulas-de-skills{
+  width: 100%;
+}
+
+.card.text-white.bg-dark.mb-3 .card-body{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.img-celula{
+  max-width: 150px;
+  margin: 50px 0 50px 0;
 }

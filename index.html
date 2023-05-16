@@ -13,54 +13,93 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div class="container">
-      <a class="navbar-brand" href="#"><img id="logo-nav" src="img\icone-logo-fav.png" alt="logo-do-menu-nav"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-        <div class="collapse navbar-collapse" id="navbarColor01">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Habilidades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projetos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Entre em contato</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+  <a class="navbar-brand" href="#"><img id="logo-nav" src="img\icone-logo-fav.png" alt="logo-do-menu-nav"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#Habilidades">Habilidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projetos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Entre em contato</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-  <div id="conteudo-do-site">
-      <div id="parte-de-cima">
-        <img id="banner-principal" src="img\banner-principal.png">
-        <div class="card text-white bg-primary mb-3" style="min-width: 40rem;">
-            <div class="card-header"><h2 class="titulo-card-sem-animacao">Olá, me chamo</h2>
-              <h2 class="titulo-card-animado">Pedro Laurenti :)</h2>
-            </div>
-            <div class="card-body">
-                <p class="card-text" style=" text-align: center;" >Se está confuso, esta página serve para 3 funções:
-                    <li>Expor meus projetos</li>
-                    <li>Interligar minhas redes sociais</li>
-                    <li>Disponibilizar informações de contato e CV</li>
-                <p style="margin-top: 1rem; text-align: center;">Por favor, considere apoiar o meu trabalho!</p>
-              </p>
-            </div>
+<div id="conteudo-do-site">
+  <div id="parte-de-cima">
+    <img id="banner-principal" src="img\banner-principal.png">
+    <div class="card text-white bg-primary mb-3" style="min-width: 40rem;">
+      <div class="card-header"><h2 class="titulo-card-sem-animacao">Olá, me chamo</h2>
+        <h2 class="titulo-card-animado">Pedro Laurenti :)</h2>
+      </div>
+      <div class="card-body">
+          <p class="card-text" style=" text-align: center;" >Se está confuso, esta página serve para 3 funções:
+              <li>Expor meus projetos</li>
+              <li>Interligar minhas redes sociais</li>
+              <li>Disponibilizar informações de contato e CV</li>
+          <p style="margin-top: 1rem; text-align: center;">Por favor, considere apoiar o meu trabalho!</p>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="area-de-botoes-principal">
+    <button type="button" class="btn btn-primary">Baixar Currículo</button>
+    <button type="button" class="btn btn-secondary">Entrar em contato</button>
+  </div>
+  
+  <div id="area-de-skills">
+    <h1 class="titulo-skills-animado" id="Habilidades">Habilidades</h1>
+    <br><br>
+    <div id="celulas-de-skills">
+      <div class="card text-white bg-dark mb-3">
+        <div class="card-header">Minhas skills em DESIGN:</div>
+        <div class="card-body">
+          <img class="img-celula"src="img\cards\Asset 57.svg" alt="">
+          <img class="img-celula"src="img\cards\Asset 58.svg" alt="">
+          <img class="img-celula"src="img\cards\Asset 59.svg" alt="">
+          <img class="img-celula"src="img\cards\Asset 60.svg" alt="">
+          <img class="img-celula"src="img\cards\Asset 61.svg" alt="">
+        </div>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
       </div>
-      <div id="area-de-skills">
-        <div id="celulas-de-skills">
-          
-        </div>
-      </div>
+    </div>
   </div>
 
-    <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="custom.js"></script>
-</body>
+  <div id="area-de-skills">
+    <div id="celulas-de-skills">
+      <div class="card text-white bg-dark mb-3">
+        <div class="card-header">Minhas skills em PROGRAMAÇÃO:</div>
+        <div class="card-body">
+          <img class="img-celula"src="img\cards\Asset 62.svg" alt="">
+          <img class="img-celula"src="img\cards\Asset 63.svg" alt="">
+          <img class="img-celula"src="img\cards\Asset 64.svg" alt="">
+          <img class="img-celula"src="img\cards\Asset 65.svg" alt="">
+          <img class="img-celula"src="img\cards\Asset 66.svg" alt="">
+        </div>
+        <div class="progress">
+          <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+</div>
+
+<script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="custom.js"></script>
+
+</body>
 </html>
