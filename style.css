@@ -10924,6 +10924,243 @@ textarea.form-control-lg {
 }
 
 #parte-de-cima{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  margin-top: 150px;
+  width: 80%;
+}
+
+/* animação */
+
+.titulo-card-sem-animacao{
+  width: 80%;
+  text-align: center;
+  margin: 20px auto 20px auto;
+  font-family:'Courier New', Courier, monospace;
+  color: #fff;
+}
+
+.titulo-card-animado{
+  width: 80%;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  font-family:'Courier New', Courier, monospace;
+  color: #fff;
+}
+.titulo-card-animado:after{
+content: '|';
+margin-left: 5px;
+opacity: 1;
+animation: pisca .7s infinite;
+}
+
+/* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+
+@keyframes pisca{
+  0%, 100%{
+      opacity: 1;
+  }
+  50%{
+      opacity: 0;
+  }
+}
+
+/* Banner principal e card */
+
+#banner-principal{
+  position: absolute ;
+  width: 100%;
+}
+
+.card.text-white.bg-primary.mb-3 {
+  position:relative  !important;
+  display: flex;
+  align-items: center;
+
+}
+
+.card-header{
+  min-height: 150px ;
+  width: 100%;
+}
+  .ps-xxl-2 {
+    padding-left: 0.5rem !important;
+  }
+  .ps-xxl-3 {
+    padding-left: 1rem !important;
+  }
+  .ps-xxl-4 {
+    padding-left: 1.5rem !important;
+  }
+  .ps-xxl-5 {
+    padding-left: 3rem !important;
+  }
+  .gap-xxl-0 {
+    gap: 0 !important;
+  }
+  .gap-xxl-1 {
+    gap: 0.25rem !important;
+  }
+  .gap-xxl-2 {
+    gap: 0.5rem !important;
+  }
+  .gap-xxl-3 {
+    gap: 1rem !important;
+  }
+  .gap-xxl-4 {
+    gap: 1.5rem !important;
+  }
+  .gap-xxl-5 {
+    gap: 3rem !important;
+  }
+  .text-xxl-start {
+    text-align: left !important;
+  }
+  .text-xxl-end {
+    text-align: right !important;
+  }
+  .text-xxl-center {
+    text-align: center !important;
+  }
+
+@media (min-width: 1200px) {
+  .fs-1 {
+    font-size: 3rem !important;
+  }
+  .fs-2 {
+    font-size: 2.5rem !important;
+  }
+  .fs-3 {
+    font-size: 2rem !important;
+  }
+  .fs-4 {
+    font-size: 1.5rem !important;
+  }
+}
+@media print {
+  .d-print-inline {
+    display: inline !important;
+  }
+  .d-print-inline-block {
+    display: inline-block !important;
+  }
+  .d-print-block {
+    display: block !important;
+  }
+  .d-print-grid {
+    display: grid !important;
+  }
+  .d-print-table {
+    display: table !important;
+  }
+  .d-print-table-row {
+    display: table-row !important;
+  }
+  .d-print-table-cell {
+    display: table-cell !important;
+  }
+  .d-print-flex {
+    display: flex !important;
+  }
+  .d-print-inline-flex {
+    display: inline-flex !important;
+  }
+  .d-print-none {
+    display: none !important;
+  }
+}
+:root {
+  color-scheme: dark;
+}
+
+.blockquote-footer {
+  color: #888;
+}
+
+.form-control {
+  color-scheme: light;
+}
+
+.input-group-addon {
+  color: #fff;
+}
+
+.form-floating > label {
+  color: #444;
+}
+
+.nav-tabs .nav-link,
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link.active:focus,
+.nav-tabs .nav-link.active:hover,
+.nav-tabs .nav-item.open .nav-link,
+.nav-tabs .nav-item.open .nav-link:focus,
+.nav-tabs .nav-item.open .nav-link:hover,
+.nav-pills .nav-link,
+.nav-pills .nav-link.active,
+.nav-pills .nav-link.active:focus,
+.nav-pills .nav-link.active:hover,
+.nav-pills .nav-item.open .nav-link,
+.nav-pills .nav-item.open .nav-link:focus,
+.nav-pills .nav-item.open .nav-link:hover {
+  color: #fff;
+}
+
+.breadcrumb a {
+  color: #fff;
+}
+
+.pagination a:hover {
+  text-decoration: none;
+}
+
+.alert {
+  color: #fff;
+  border: none;
+}
+.alert a,
+.alert .alert-link {
+  color: #fff;
+  text-decoration: underline;
+}
+.alert-primary {
+  background-color: #375a7f;
+}
+.alert-secondary {
+  background-color: #444;
+}
+.alert-success {
+  background-color: #00bc8c;
+}
+.alert-info {
+  background-color: #3498db;
+}
+.alert-warning {
+  background-color: #f39c12;
+}
+.alert-danger {
+  background-color: #e74c3c;
+}
+.alert-light {
+  background-color: #adb5bd;
+}
+.alert-dark {
+  background-color: #303030;
+}
+
+/* personalizado */
+
+#conteudo-do-site{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+#parte-de-cima{
   margin-top: 150px;
   width: 80%;
   display: flex;
