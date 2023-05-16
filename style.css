@@ -11200,5 +11200,7 @@ animation: pisca .7s infinite;
   }
   50%{
       opacity: 0;
+      opacity: 0;
+      opacity: 0;
   }
 }
