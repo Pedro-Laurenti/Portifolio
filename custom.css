@@ -75,7 +75,7 @@ animation: pisca .7s infinite;
 
 #area-de-botoes-principal{
   margin: 100px 0 200px 0;
-  width: 30%;
+  width: 50%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -110,4 +110,24 @@ animation: pisca .7s infinite;
 .img-celula{
   max-width: 150px;
   margin: 50px 0 50px 0;
+}
+
+/*sobre mim */
+
+#sobre-mim{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sobre-mim-imagem {
+  border-radius: 50%;
+
+  width: 500px;
+}
+
+#texto-sobre-mim{
+  max-width: 50rem;
+  text-indent:25px;
+  text-align: justify;
 }
