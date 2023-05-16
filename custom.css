@@ -41,8 +41,6 @@ opacity: 1;
 animation: pisca .7s infinite;
 }
 
-/* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
-
 @keyframes pisca{
   0%, 100%{
       opacity: 1;
