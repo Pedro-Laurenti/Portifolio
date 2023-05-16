@@ -9,10 +9,12 @@
 }
 
 #parte-de-cima{
-  width: 80%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  margin-top: 150px;
+  width: 80%;
 }
 
 /* animação */
@@ -39,6 +41,8 @@ opacity: 1;
 animation: pisca .7s infinite;
 }
 
+/* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+
 @keyframes pisca{
   0%, 100%{
       opacity: 1;
@@ -48,18 +52,24 @@ animation: pisca .7s infinite;
   }
 }
 
-/* parte de cima do site */
-
-#parte-de-cima{
-  width: 100%;
-  position: relative;
-}
+/* Banner principal e card */
 
 #banner-principal{
+  position: absolute ;
   width: 100%;
-  position: relative;
 }
 
 .card.text-white.bg-primary.mb-3 {
-  position: absolute !important;
+  position:relative  !important;
+  display: flex;
+  align-items: center;
+}
+
+.card-header{
+  min-height: 150px ;
+  width: 100%;
+}
+
+#logo-nav{
+  max-width: 20%;
 }
