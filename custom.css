@@ -17,7 +17,15 @@
   width: 80%;
 }
 
-/* animação */
+html {
+  scroll-behavior: smooth;
+}
+
+#header-link:hover{
+  cursor: pointer;
+}
+
+/* animação de máquina de escrever */
 
 .titulo-card-sem-animacao{
   width: 80%;
@@ -56,6 +64,7 @@ animation: pisca .7s infinite;
 #banner-principal{
   position: absolute ;
   width: 100%;
+  margin-top: -40px;
 }
 
 .card.text-white.bg-primary.mb-3 {
@@ -74,13 +83,57 @@ animation: pisca .7s infinite;
 }
 
 #area-de-botoes-principal{
-  margin: 100px 0 200px 0;
+  margin: 50px 0 200px 0;
   width: 50%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   position: relative !important;
+}
+
+/* animação da seta */
+
+@keyframes arrow-animation {
+  0% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.seta-para-baixo {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  animation: arrow-animation 2s infinite;
+}
+
+.botao-seta-para-baixo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 50px 0 10px 0;
+}
+
+.circulo-seta:hover{
+  background-color: #4e7095;
+}
+
+.circulo-seta{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #375a7f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 /* células de skills */
@@ -103,7 +156,8 @@ animation: pisca .7s infinite;
 
 .card.text-white.bg-dark.mb-3 .card-body{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-evenly;
 }
 
@@ -115,6 +169,8 @@ animation: pisca .7s infinite;
 /*sobre mim */
 
 #sobre-mim{
+  margin-top: 200px;
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,12 +178,16 @@ animation: pisca .7s infinite;
 
 #sobre-mim-imagem {
   border-radius: 50%;
-
-  width: 500px;
+  width: 400px;
+  margin-top: 100px;
 }
 
 #texto-sobre-mim{
   max-width: 50rem;
   text-indent:25px;
   text-align: justify;
+}
+
+#titulo-sobre-mim{
+  margin: 50px 0 50px 0;
 }
