@@ -83,7 +83,7 @@ animation: pisca .7s infinite;
 }
 
 #area-de-botoes-principal{
-  margin: 50px 0 200px 0;
+  margin: 50px 0 50px 0;
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -136,41 +136,10 @@ animation: pisca .7s infinite;
   cursor: pointer;
 }
 
-/* células de skills */
-
-.titulo-skills-animado:after{
-  content: '_';
-  margin-left: 5px;
-  opacity: 1;
-  animation: pisca .7s infinite;
-}
-
-#area-de-skills{
-  margin-top: 50px;
-  width: 80%;
-}
-
-#celulas-de-skills{
-  width: 100%;
-}
-
-.card.text-white.bg-dark.mb-3 .card-body{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.img-celula{
-  max-width: 150px;
-  margin: 50px 0 50px 0;
-}
-
 /*sobre mim */
 
 #sobre-mim{
-  margin-top: 200px;
-  padding-bottom: 100px;
+  margin: 200px 0 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,4 +159,71 @@ animation: pisca .7s infinite;
 
 #titulo-sobre-mim{
   margin: 50px 0 50px 0;
+}
+
+/* células de skills */
+
+.titulo-skills-animado:after{
+  content: '_';
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca .7s infinite;
+}
+
+#area-de-skills{
+  margin: 25px 0 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#celulas-de-skills{
+  width: 70%;
+}
+
+.card.text-white.bg-dark.mb-3 .card-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#conteudo-da-tab{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress{
+  width: 100%;
+}
+
+#texto-da-tab{
+  text-align: justify;
+  text-indent: 25px;
+}
+
+.img-celula{
+  max-width: 150px;
+  margin: 50px 0 50px 0;
+}
+
+#apenas-mobile{
+  display: none;
+}
+
+#Habilidades{
+  margin: 50px 0 50px 0;
+}
+
+@media (max-width: 600px) {
+
+  #apenas-mobile{
+    display:block;
+  }
+
+  #apenas-desktop{
+    display: none;
+  }
+
 }

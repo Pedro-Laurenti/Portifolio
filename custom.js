@@ -41,21 +41,20 @@ typeWrite(titulo, 4000, 75, 50);
 
 function smoothScroll(targetId) {
     const targetElement = document.getElementById(targetId);
-    const targetOffset = targetElement.offsetTop;
+    const targetOffset = targetElement.offsetTop -30; // Capturar a posição do início da div
     const scrollDuration = 1000; // Duração da animação em milissegundos
-    const scrollStep = Math.PI / (scrollDuration / 15); // Valor do incremento de rolagem
 
     let scrollCount = 0;
     let currPos = window.pageYOffset;
 
     const scrollInterval = setInterval(() => {
-    if (scrollCount >= scrollDuration) {
-        clearInterval(scrollInterval);
-    }
+        if (scrollCount >= scrollDuration) {
+            clearInterval(scrollInterval);
+        }
 
-    scrollCount += 15;
-    const newPos = easeInOut(currPos, targetOffset, scrollCount, scrollDuration);
-    window.scrollTo(0, newPos);
+        scrollCount += 15;
+        const newPos = easeInOut(currPos, targetOffset, scrollCount, scrollDuration);
+        window.scrollTo(0, newPos);
     }, 15);
 }
 
@@ -64,4 +63,16 @@ function easeInOut(start, end, current, duration) {
     const currentTime = current / duration;
     const easeInCubic = currentTime * currentTime * currentTime;
     return start + delta * easeInCubic;
+}
+
+//Substituição do nome no dropdown das skills
+
+function updateDropdownText1(name) {
+    const dropdownElement = document.getElementById('dropdown-nome-atualizar-1');
+    dropdownElement.innerText = name;
+}
+
+function updateDropdownText2(name) {
+    const dropdownElement = document.getElementById('dropdown-nome-atualizar-2');
+    dropdownElement.innerText = name;
 }
