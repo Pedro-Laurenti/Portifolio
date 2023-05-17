@@ -12,8 +12,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: -1;
-  margin-top: 150px;
   width: 80%;
 }
 
@@ -23,6 +21,18 @@ html {
 
 #header-link:hover{
   cursor: pointer;
+}
+
+#espaçamento{
+  height: 200px;
+}
+
+nav{
+  position: fixed !important;
+  width: 100%;
+  z-index: 1;
+  background-color: #011023ac !important;
+  backdrop-filter: blur(3px);
 }
 
 /* animação de máquina de escrever */
@@ -64,7 +74,8 @@ animation: pisca .7s infinite;
 #banner-principal{
   position: absolute ;
   width: 100%;
-  margin-top: -40px;
+  margin-top: 0;
+  z-index: -1;
 }
 
 .card.text-white.bg-primary.mb-3 {
@@ -83,7 +94,7 @@ animation: pisca .7s infinite;
 }
 
 #area-de-botoes-principal{
-  margin: 50px 0 50px 0;
+  margin-top: 50px;
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -118,7 +129,7 @@ animation: pisca .7s infinite;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin: 50px 0 10px 0;
+  margin: 15px 0 15px 0;
 }
 
 .circulo-seta:hover{
@@ -129,7 +140,7 @@ animation: pisca .7s infinite;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #375a7f;
+  background-color: #2e79cf;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,16 +150,15 @@ animation: pisca .7s infinite;
 /*sobre mim */
 
 #sobre-mim{
-  margin: 200px 0 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 85px;
 }
 
 #sobre-mim-imagem {
   border-radius: 50%;
   width: 400px;
-  margin-top: 100px;
 }
 
 #texto-sobre-mim{
@@ -163,6 +173,13 @@ animation: pisca .7s infinite;
 
 /* células de skills */
 
+#Habilidades{
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .titulo-skills-animado:after{
   content: '_';
   margin-left: 5px;
@@ -170,11 +187,22 @@ animation: pisca .7s infinite;
   animation: pisca .7s infinite;
 }
 
-#area-de-skills{
-  margin: 25px 0 25px 0;
+#area-de-skills {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative !important;
+}
+
+#ilustracao-de-skills {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+#img-secundaria-habilidades-edt {
+  width: 1502px;
+  height: 1000px;
 }
 
 #celulas-de-skills{
@@ -210,10 +238,6 @@ animation: pisca .7s infinite;
 
 #apenas-mobile{
   display: none;
-}
-
-#Habilidades{
-  margin: 50px 0 50px 0;
 }
 
 @media (max-width: 600px) {
