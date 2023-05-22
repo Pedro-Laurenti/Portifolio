@@ -76,3 +76,25 @@ function updateDropdownText2(name) {
     const dropdownElement = document.getElementById('dropdown-nome-atualizar-2');
     dropdownElement.innerText = name;
 }
+
+
+//animação de aparecimento dos itens on-scrolling
+
+function handleScroll() {
+    var elementos = document.getElementsByClassName("elemento-animado");
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    for (var i = 0; i < elementos.length; i++) {
+        var elemento = elementos[i];
+        var posicaoTopo = elemento.getBoundingClientRect().top;
+
+        if (posicaoTopo < window.innerHeight && scrollTop > 0) {
+        elemento.classList.add("fade-in");
+        } else {
+        elemento.classList.remove("fade-in");
+        }
+    }
+}
+
+window.addEventListener("scroll", handleScroll);
+window.addEventListener("resize", handleScroll);

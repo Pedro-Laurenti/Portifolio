@@ -82,6 +82,8 @@ animation: pisca .7s infinite;
   position:relative  !important;
   display: flex;
   align-items: center;
+  min-width: unset !important;
+  width: 50%;
 }
 
 .card.text-white.bg-primary.mb-3 .card-header{
@@ -147,6 +149,19 @@ animation: pisca .7s infinite;
   cursor: pointer;
 }
 
+/* Animação de fade */
+
+.elemento-animado {
+  opacity: 0;
+  transform: translateX(-50px); /* Desliza o elemento para a esquerda */
+  transition: opacity 2s, transform 0.5s; /* Define a duração das transições */
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateX(0); /* Restaura a posição original */
+}
+
 /*sobre mim */
 
 #sobre-mim{
@@ -154,6 +169,7 @@ animation: pisca .7s infinite;
   flex-direction: column;
   align-items: center;
   padding-top: 85px;
+  width: 70%;
 }
 
 #sobre-mim-imagem {
@@ -169,6 +185,17 @@ animation: pisca .7s infinite;
 
 #titulo-sobre-mim{
   margin: 50px 0 50px 0;
+}
+
+.btn{
+  white-space: nowrap;
+}
+
+@media (max-width: 1000px) {
+  #area-de-botoes-principal{
+    flex-direction: column;
+    height: 90px;
+  }
 }
 
 /* células de skills */
@@ -240,7 +267,7 @@ animation: pisca .7s infinite;
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
 
   #apenas-mobile{
     display:block;
@@ -248,6 +275,48 @@ animation: pisca .7s infinite;
 
   #apenas-desktop{
     display: none;
+  }
+
+}
+
+/* Projetos */
+
+
+#projetos{
+  width: 70%;
+  text-align: center;
+}
+
+#projetos-celulas{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#projeto-item{
+  max-width: 50%;
+}
+
+.card.mb-3{
+  margin:25px;
+}
+
+@media (max-width: 1000px) {
+
+  .card.mb-3{
+    margin:0;
+  }
+
+  #projetos-celulas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #projeto-item{
+    max-width: 100%;
   }
 
 }
