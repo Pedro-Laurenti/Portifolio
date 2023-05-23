@@ -302,6 +302,26 @@ animation: pisca .7s infinite;
   margin:25px;
 }
 
+.img-celula-projetos {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.area-clicavel-img-projetos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px; /* Define a altura desejada */
+  width: 100%; /* Define a largura desejada */
+  overflow: hidden; /* Oculta o conteúdo que excede os limites da div */
+}
+
+.area-clicavel-img-projetos:hover img {
+  filter: brightness(0.5);
+  transition: 0.5s; /* Escurece a imagem em 20% */
+}
+
 @media (max-width: 1000px) {
 
   .card.mb-3{
