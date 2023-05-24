@@ -300,6 +300,7 @@ animation: pisca .7s infinite;
 
 .card.mb-3{
   margin:25px;
+  height: 750px;
 }
 
 .img-celula-projetos {
@@ -322,10 +323,15 @@ animation: pisca .7s infinite;
   transition: 0.5s; /* Escurece a imagem em 20% */
 }
 
+.card-text{
+  text-align: justify;
+}
+
 @media (max-width: 1000px) {
 
   .card.mb-3{
     margin:0;
+    height: auto;
   }
 
   #projetos-celulas{
