@@ -346,3 +346,31 @@ animation: pisca .7s infinite;
   }
 
 }
+
+
+/* footer */
+
+footer{
+  background-color: rgb(24, 24, 24);
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  margin-top: 150px;
+}
+
+#icones-footer {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#logo-footer{
+  height: 50px;
+  margin-bottom: 25px;
+  filter: brightness(200%);
+}
