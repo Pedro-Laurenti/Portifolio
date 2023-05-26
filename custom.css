@@ -73,7 +73,14 @@ animation: pisca .7s infinite;
 
 #banner-principal{
   position: absolute ;
-  margin-top: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/banner-principal.png');
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta a imagem para preencher a tela */
+  background-position: center; /* Centraliza a imagem */
   z-index: -1;
 }
 
@@ -88,10 +95,6 @@ animation: pisca .7s infinite;
 .card.text-white.bg-primary.mb-3 .card-header{
   min-height: 150px ;
   width: 100%;
-}
-
-#logo-nav{
-  max-width: 20%;
 }
 
 #area-de-botoes-principal{
@@ -112,11 +115,6 @@ animation: pisca .7s infinite;
   #parte-de-cima{
     width:100%;
   }
-
-  #banner-principal {
-    width: auto;
-  }
-
 }
 
 /* animação da seta */
@@ -168,7 +166,7 @@ animation: pisca .7s infinite;
 .elemento-animado {
   opacity: 0;
   transform: translateX(-50px); /* Desliza o elemento para a esquerda */
-  transition: opacity 2s, transform 0.5s; /* Define a duração das transições */
+  transition: opacity 1.5s, transform 0.2s; /* Define a duração das transições */
 }
 
 .fade-in {
@@ -317,7 +315,7 @@ animation: pisca .7s infinite;
 }
 
 #div-projeto-item{
-  height: 750px;
+  min-height: 750px;
 }
 
 .img-celula-projetos {
@@ -386,8 +384,11 @@ footer{
   justify-content: space-between;
 }
 
-#logo-footer{
-  height: 50px;
-  margin-bottom: 25px;
+#logo-nav,#logo-footer{
   filter: brightness(200%);
+  width: 50px;
+}
+
+#logo-footer{
+  margin-bottom: 50px;
 }

@@ -83,18 +83,20 @@ function updateDropdownText2(name) {
 function handleScroll() {
     var elementos = document.getElementsByClassName("elemento-animado");
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
     for (var i = 0; i < elementos.length; i++) {
         var elemento = elementos[i];
         var posicaoTopo = elemento.getBoundingClientRect().top;
 
-        if (posicaoTopo < window.innerHeight && scrollTop > 0) {
-        elemento.classList.add("fade-in");
+        if (posicaoTopo < windowHeight && scrollTop > 0) {
+            elemento.classList.add("fade-in");
         } else {
-        elemento.classList.remove("fade-in");
+            elemento.classList.remove("fade-in");
         }
     }
 }
 
 window.addEventListener("scroll", handleScroll);
 window.addEventListener("resize", handleScroll);
+window.addEventListener("touchmove", handleScroll);
