@@ -73,7 +73,6 @@ animation: pisca .7s infinite;
 
 #banner-principal{
   position: absolute ;
-  width: 100%;
   margin-top: 0;
   z-index: -1;
 }
@@ -103,6 +102,21 @@ animation: pisca .7s infinite;
   align-items: center;
   justify-content: space-between;
   position: relative !important;
+}
+
+@media (max-width: 1000px) {
+  .card.text-white.bg-primary.mb-3 {
+    width: 80%;
+  }
+
+  #parte-de-cima{
+    width:100%;
+  }
+
+  #banner-principal {
+    width: auto;
+  }
+
 }
 
 /* animação da seta */
@@ -300,6 +314,9 @@ animation: pisca .7s infinite;
 
 .card.mb-3{
   margin:25px;
+}
+
+#div-projeto-item{
   height: 750px;
 }
 
