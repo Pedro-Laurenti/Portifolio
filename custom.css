@@ -208,6 +208,10 @@ animation: pisca .7s infinite;
     flex-direction: column;
     height: 90px;
   }
+
+  #sobre-mim-imagem{
+    width: 80%;
+  }
 }
 
 /* células de skills */
