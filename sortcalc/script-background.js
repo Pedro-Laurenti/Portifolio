@@ -64,7 +64,7 @@ function particle() {
 function draw() {
     requestAnimFrame(draw)
 
-    ctx.fillStyle = '#222222';
+    ctx.fillStyle = '#010209';
     ctx.fillRect(0, 0, c.width, c.height)
 
     for (t = 0; t < particles.length; t++) {

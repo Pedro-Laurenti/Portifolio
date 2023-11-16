@@ -36,7 +36,7 @@ function startInterval() {
     intervalId = setInterval(function() {
         index++;
         changeSlide();
-    }, 2500); // 2500 milissegundos = 2,5 segundos
+    }, 6500); // 2500 milissegundos = 6,5 segundos
 }
 
 function resetInterval() {

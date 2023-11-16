@@ -97,8 +97,12 @@ footer{
 }
 
 #logo-nav,#logo-footer{
-  filter: brightness(200%);
-  width: 50px;
+  width: 150px;
+}
+
+#logo-nav:hover{
+  transition-duration: 0.5s;
+  filter: brightness(80%);
 }
 
 #logo-footer{

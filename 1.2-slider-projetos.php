@@ -6,7 +6,7 @@
     <div id="slider">
         
         <div class="slide">
-            <img class="img-carrossel" src="./root/img/img-exemplo.png" alt="carrossel imagem">
+            <img class="img-carrossel" src="./root/img/carrossel/pag-1.png" alt="carrossel imagem">
         </div>
 
         <div class="slide">

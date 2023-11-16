@@ -1,14 +1,24 @@
 .navbar-dark{
     z-index: 1000;
-} 
+    background-color: rgba(18, 126, 233, 0.485)!important;
+}
+
+.container{
+    flex-direction: column;
+}
 
 .sortcalc{
     margin: 100px 0 0 0;
+    border-color: #091558;
 }
 
 .sortcalc2{
     margin: 0 0 0 0;
     max-height: 200px;
+}
+
+.card-header{
+    background-color: #3549ba;
 }
 
 .sortcalc2 .card-header{
@@ -86,5 +96,11 @@
 }
 
 .card-body{
-    overflow: auto
+    overflow: auto;
+    background-color: #030826;
+    border-color: #030826;
+}
+
+#conteudo-do-site{
+    background-color: #010209;
 }
