@@ -1,0 +1,90 @@
+.navbar-dark{
+    z-index: 1000;
+} 
+
+.sortcalc{
+    margin: 100px 0 0 0;
+}
+
+.sortcalc2{
+    margin: 0 0 0 0;
+    max-height: 200px;
+}
+
+.sortcalc2 .card-header{
+    height: 60px;
+}
+
+.sortcalc2 .card-header .titulo-card-sem-animacao{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.excecao {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.add-remove{
+    color: #fff;
+    border: none;
+    border-radius: 3px; /* Alterado para 3px */
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+    margin-left: 5px; /* Ajustado para 5px */
+    transition: background-color 0.2s;
+}
+
+.remove-excecao {
+    background-color: #E74C3C;
+
+}
+
+.add-excecao {
+    background-color: #00A077;
+}
+
+.remove-excecao:hover {
+    background-color: #a9382c;
+}
+
+
+.add-excecao:hover {
+    background-color: #0C8667;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 80px;
+    background-color: #00A077;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+#submit-class{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+#Contato{
+    min-height: 100px;
+}
+
+#wrapper-calc{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body{
+    overflow: auto
+}
