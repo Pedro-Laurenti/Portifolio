@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="sortcalc/style.css">
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="root/custom.css">
 
 <?php require_once 'background-hover.php'; ?>
@@ -63,4 +63,4 @@
 
 
 
-<script src="sortcalc/script.js"></script>
+<script src="script.js"></script>

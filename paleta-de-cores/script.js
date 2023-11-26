@@ -28,17 +28,49 @@ function criarPartes() {
 }
 
 function mostrarDescricao(descricao) {
+    // Oculta todos os elementos com a classe ".descricao"
+    var elementosDescricao = document.querySelectorAll('.descricao');
+    elementosDescricao.forEach(function(elemento) {
+        elemento.style.display = 'none';
+    });
+
+    // Oculta todos os elementos com a classe ".descricao2"
+    var elementosDescricao2 = document.querySelectorAll('.descricao2');
+    elementosDescricao2.forEach(function(elemento) {
+        elemento.style.display = 'none';
+    });
+
+    // Exibe a descrição atual
     descricao.style.display = 'block';
-    descricaoAberta = descricao; // Atualiza a descrição atualmente aberta
+
+    // Atualiza a descrição atualmente aberta
+    descricaoAberta = descricao;
 }
 
-// Adicione um ouvinte de evento de clique no documento inteiro
-document.addEventListener('click', (event) => {
-    if (descricaoAberta && !circulo.contains(event.target) && !event.target.classList.contains('descricao')) {
-        // Se uma descrição está aberta, o clique não está dentro do círculo e não é na própria descrição
-        descricaoAberta.style.display = 'none';
-        descricaoAberta = null;
-    }
+document.addEventListener('DOMContentLoaded', function() {
+    // Encontre todos os botões de fechar
+    var botoesFechar = document.querySelectorAll('.botaoFechar');
+
+    // Adicione um ouvinte de clique a cada botão de fechar
+    botoesFechar.forEach(function(botaoFechar) {
+        botaoFechar.addEventListener('click', function() {
+            // Encontre a descrição correspondente ao botão clicado
+            var descricao = this.parentElement;
+
+            // Oculta a descrição ao clicar no botão X
+            if (descricao) {
+                descricao.style.display = 'none';
+            }
+
+            // Lógica para exibir descricao2 (assumindo que descricao2 é o próximo elemento irmão)
+            var descricao2 = document.querySelectorAll('.descricao2');
+            if (descricao2.length > 0) {
+                descricao2[0].style.display = 'block';
+            }
+
+            descricaoAberta = null;
+        });
+    });
 });
 
 criarPartes();

@@ -1,17 +1,23 @@
-<link rel="stylesheet" href="./paleta-de-cores/style.css">
+<link rel="stylesheet" href="style.css">
 
 <div id="grupo-pai">
     <div class="circulo" id="circulo">
         <div class="buraco"></div>
     </div>
     <div id="area-descricao">
+        <div class="descricao2 fundo">
+            <div class="texto-descricao"></div>
+        </div>
         <div class="descricao" data-area="Área 1">
+            <button class="botaoFechar" ><img class="close-icone" src="./root/img/close.png" alt="close"></img></button>
             <div class="titulo-descricao" style="background-color: #FF5733;">Vermelho</div>
             <div class="texto-descricao">
-                Vermelho é a cor mais quente e carregada emocionalmente. Ela pode expressar valores opostos do bem e do
+                Vermelho é a cor mais quente e carregada emocionalmente. Ela pode expressar valores opostos do bem e
+                do
                 mal, como o amor e a guerra, como a proibição e a transgressão.
                 <br><br>
-                Na Igreja Católica o feriado de Pentecostes é celebrado com cores vermelhas pois ele simboliza a chama
+                Na Igreja Católica o feriado de Pentecostes é celebrado com cores vermelhas pois ele simboliza a
+                chama
                 do Espírito Santo e o Santíssimo Sangue de Jesus Cristo.
             </div>
 
@@ -30,6 +36,7 @@
         </div>
 
         <div class="descricao" data-area="Área 2">
+            <button class="botaoFechar" ><img class="close-icone" src="./root/img/close.png" alt="close"></img></button>
             <div class="titulo-descricao" style="background-color: #F18E1C;">Laranja</div>
             <div class="texto-descricao">
                 A cor laranja desempenha um papel subvalorizado em nossas mentes. Antes de pensar no laranja
@@ -41,7 +48,8 @@
 
             <div class="titulo-descricao" style="background-color: #F18E1C;">Associações</div>
             <div class="texto-descricao">
-                <b>Positivas</b>: terra, calor, energia, estimulante, saúde, recreação, sociável, amigável, alegria.<br>
+                <b>Positivas</b>: terra, calor, energia, estimulante, saúde, recreação, sociável, amigável,
+                alegria.<br>
                 <b>Negativas</b>: competição, ofensa, agressão.
             </div>
 
@@ -54,13 +62,14 @@
         </div>
 
         <div class="descricao" data-area="Área 3">
-
+        <button class="botaoFechar" ><img class="close-icone" src="./root/img/close.png" alt="close"></img></button>
             <div class="titulo-descricao" style="background-color: #f2f544; color:black;">Amarelo</div>
             <div class="texto-descricao">
                 É uma cor quente que remete a coisas alegres. É a cor da jovialidade, do lúdico, da recreação e do
                 otimismo.
                 <br><br>
-                Ela é bastante funcional quando utilizada para alertar sobre os perigos, informar sobre os cuidados em
+                Ela é bastante funcional quando utilizada para alertar sobre os perigos, informar sobre os cuidados
+                em
                 sinalizações, por ser uma cor chamativa. É a cor internacional das advertências.
             </div>
 
@@ -80,12 +89,13 @@
         </div>
 
         <div class="descricao" data-area="Área 4">
-
+        <button class="botaoFechar" ><img class="close-icone" src="./root/img/close.png" alt="close"></img></button>
             <div class="titulo-descricao" style="background-color: #43c635;">Verde</div>
             <div class="texto-descricao">
                 Verde é uma cor versátil, portanto pode ser aplicada com diferentes objetivos.
                 <br><br>
-                Como é uma cor que remete a ambiente é uma cor bastante utilizada em projetos envolvidos com questões
+                Como é uma cor que remete a ambiente é uma cor bastante utilizada em projetos envolvidos com
+                questões
                 ecológicas, sustentabilidade e de conservação do meio-ambiente.
             </div>
 
@@ -105,13 +115,15 @@
         </div>
 
         <div class="descricao" data-area="Área 5">
-
+        <button class="botaoFechar" ><img class="close-icone" src="./root/img/close.png" alt="close"></img></button>
             <div class="titulo-descricao" style="background-color: #0696BB;">Azul</div>
             <div class="texto-descricao">
                 A cor azul é a cor preferida tanto do público masculino quanto do feminino.
                 <br><br>
-                Transmite sensações de segurança e confiança. É a cor mais fria. E se percebe também pela experiência da
-                exposição da pele exposta ao frio que fica azulada e pela visualização da cintilação azulada do gelo e
+                Transmite sensações de segurança e confiança. É a cor mais fria. E se percebe também pela
+                experiência da
+                exposição da pele exposta ao frio que fica azulada e pela visualização da cintilação azulada do gelo
+                e
                 da neve.
             </div>
 
@@ -131,13 +143,15 @@
         </div>
 
         <div class="descricao" data-area="Área 6">
-
+        <button class="botaoFechar" ><img class="close-icone" src="./root/img/close.png" alt="close"></img></button>
             <div class="titulo-descricao" style="background-color: #954B98;">Violeta</div>
             <div class="texto-descricao">
-                O violeta e o lilás são as cores mais raras da natureza. Ela simboliza valores como espiritualidade e
+                O violeta e o lilás são as cores mais raras da natureza. Ela simboliza valores como espiritualidade
+                e
                 oração.
                 <br><br>
-                No passado, a cor usada por quem governava era o púrpura, ou violeta. Vestir púrpura era um privilégio
+                No passado, a cor usada por quem governava era o púrpura, ou violeta. Vestir púrpura era um
+                privilégio
                 maior que usar dourado.
                 <br><br>
                 Violeta é a cor usada pelo escalão de bispos e de prelados em suas batinas, nos atos oficiais.
@@ -160,13 +174,15 @@
         </div>
 
         <div class="descricao" data-area="Área 7">
-
+        <button class="botaoFechar" ><img class="close-icone" src="./root/img/close.png" alt="close"></img></button>
             <div class="titulo-descricao" style="background-color: #E6007E;">Rosa</div>
             <div class="texto-descricao">
-                As características gerais que são atribuídas a cor rosa são tipicamente femininas, conforme a Psicologia
+                As características gerais que são atribuídas a cor rosa são tipicamente femininas, conforme a
+                Psicologia
                 da Cores. O rosa é a cor da cortesia, da amabilidade, do charme.
                 <br><br>
-                Na tradição antiga a cor-de-rosa era uma cor masculina. Em pinturas barrocas meninos aparecem vestidos
+                Na tradição antiga a cor-de-rosa era uma cor masculina. Em pinturas barrocas meninos aparecem
+                vestidos
                 de rosa, e em quadros antigos, o menino Jesus é retratado vestindo trajes cor-de-rosa.
             </div>
 
@@ -186,6 +202,7 @@
         </div>
 
         <div class="descricao" data-area="Área 8">
+        <button class="botaoFechar"><img class="close-icone" src="./root/img/close.png" alt="close"></img></button>
             <div class="titulo-descricao" style="background-color: #FF5733;">Vermelho</div>
             <div class="texto-descricao">
                 É um clichê para criação de objetos delicados, macios, doces, pequeninos e fofinhos.
@@ -193,6 +210,7 @@
         </div>
 
         <div class="descricao" data-area="Área 9">
+        <button class="botaoFechar" ><img class="close-icone" src="./root/img/close.png" alt="close"></img></button>
             <div class="titulo-descricao" style="background-color: #FF5733;">Vermelho</div>
             <div class="texto-descricao">
                 Vermelho é a cor mais quente e carregada emocionalmente. Ela pode expressar valores opostos do bem e
@@ -205,4 +223,4 @@
     </div>
 </div>
 
-<script src="paleta-de-cores/script.js"></script>
+<script src="script.js"></script>

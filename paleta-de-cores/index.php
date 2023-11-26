@@ -4,9 +4,20 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.css">
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
     <script src="https://kit.fontawesome.com/09b3ced86b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/default.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/go.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
+
     <link rel="stylesheet" href="./root/custom.css">
     <link rel="shortcut icon" href="./root/img/icone-logo-fav.png" type="image/x-icon">
     <title>Paleta de Cores</title>
@@ -23,6 +34,8 @@
 <div id="conteudo-do-site">
 
     <?php require_once 'paleta.php'; ?>
+
+    <?php require_once 'codigo-copiar.php'; ?>
 
 </div>
 

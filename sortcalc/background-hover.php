@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="sortcalc/style-background.css">
+<link rel="stylesheet" href="style-background.css">
 
 <canvas id="c"></canvas>
 
-<script src="sortcalc/script-background.js"></script>
+<script src="script-background.js"></script>

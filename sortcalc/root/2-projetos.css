@@ -1,0 +1,72 @@
+/* Projetos */
+
+
+#projetos{
+    width: 70%;
+    text-align: center;
+}
+
+#projetos-celulas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#projeto-item{
+    max-width: 50%;
+}
+
+.projeto-header-1{
+    padding: 10px;
+}
+
+#div-projeto-item{
+    margin: 50px 0 50px 0;
+    max-width: 600px;
+    min-height: 450px;
+}
+
+.img-celula-projetos {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.area-clicavel-img-projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px; /* Define a altura desejada */
+    width: 100%; /* Define a largura desejada */
+    overflow: hidden; /* Oculta o conteúdo que excede os limites da div */
+}
+
+.area-clicavel-img-projetos:hover img {
+    filter: brightness(0.5);
+    transition: 0.5s; /* Escurece a imagem em 20% */
+}
+
+.card-text{
+    text-align: justify;
+}
+
+@media (max-width: 1000px) {
+
+    .card.mb-3{
+    margin:0;
+    height: auto;
+    }
+
+    #projetos-celulas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    #projeto-item{
+    max-width: 100%;
+    }
+
+}

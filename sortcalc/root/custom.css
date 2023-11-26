@@ -1,0 +1,117 @@
+/* personalizado */
+
+html {
+  scroll-behavior: smooth;
+}
+
+#conteudo-do-site{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+#header-link:hover{
+  cursor: pointer;
+}
+
+nav{
+  position: fixed !important;
+  width: 100%;
+  z-index: 1;
+  background-color: #011023ac !important;
+  backdrop-filter: blur(3px);
+}
+
+.navbar-collapse{
+  flex-grow:0 !important;
+}
+
+/* animação de máquina de escrever */
+
+.titulo-card-sem-animacao{
+  width: 80%;
+  text-align: center;
+  margin: 20px auto 20px auto;
+  font-family:'Courier New', Courier, monospace;
+  color: #fff;
+}
+
+.titulo-card-animado{
+  width: 80%;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  font-family:'Courier New', Courier, monospace;
+  color: #fff;
+}
+
+.titulo-card-animado:after{
+content: '_';
+margin-left: 5px;
+opacity: 1;
+animation: pisca .7s infinite;
+}
+
+@keyframes pisca{
+  0%, 100%{
+      opacity: 1;
+  }
+  50%{
+      opacity: 0;
+  }
+}
+
+/* Animação de fade */
+
+.elemento-animado {
+  opacity: 0;
+  transform: translateX(-50px); /* Desliza o elemento para a esquerda */
+  transition: opacity 1.5s, transform 0.2s; /* Define a duração das transições */
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateX(0); /* Restaura a posição original */
+}
+
+/* footer */
+
+footer{
+  background-color: rgb(24, 24, 24);
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  z-index: 5;
+  position: absolute;
+}
+
+#icones-footer {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#logo-nav,#logo-footer{
+  width: 150px;
+}
+
+#logo-nav:hover{
+  transition-duration: 0.5s;
+  filter: brightness(80%);
+}
+
+#logo-footer{
+  margin-bottom: 50px;
+}
+
+
+/* Espaçamento */
+
+#parte-de-cima, #projetos, #sobre-mim, #Habilidades{
+  margin: 200px 0 200px 0;
+}

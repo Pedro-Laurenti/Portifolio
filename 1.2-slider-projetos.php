@@ -10,15 +10,15 @@
         </div>
 
         <div class="slide">
-            <img class="img-carrossel" src="./root/img/img-exemplo.png" alt="carrossel imagem">
+            <img class="img-carrossel" src="./root/img/carrossel/pag-2.png" alt="carrossel imagem">
         </div>
 
         <div class="slide">
-            <img class="img-carrossel" src="./root/img/img-exemplo.png" alt="carrossel imagem">
+            <img class="img-carrossel" src="./root/img/orbyte-logo.png" alt="carrossel imagem">
         </div>
 
         <div class="slide">
-            <img class="img-carrossel" src="./root/img/img-exemplo.png" alt="carrossel imagem">
+            <img class="img-carrossel" src="./root/img/stockedu-login.png" alt="carrossel imagem">
         </div>
 
         <!--Controlling arrows-->

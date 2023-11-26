@@ -1,0 +1,32 @@
+.grupo-codigo-copiar-wrapper{
+    margin: 80px 0 0 0;
+    width: 90%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(19, 19, 19);
+    border-radius: 10px;
+    border: solid 2px rgb(119, 119, 119);
+}
+
+.celula-code{
+    width: 100%;
+    padding: 10px;
+    border-left: solid 1px  rgb(119, 119, 119) ;
+    max-height: 150px ;
+    overflow-x: none;
+}
+#php-code{
+    border-left: none;
+}
+
+.nav-guia-codes{
+    border-bottom: solid 1px  rgb(119, 119, 119) ;
+}
+
+pre{
+    margin-top: 50px;
+    max-width: 750px !important;
+    max-height: 250px ;
+    border-radius: 10px;
+}
